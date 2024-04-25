@@ -1,5 +1,7 @@
 import { useState } from "react"
 
+/* ARchivo Barril. de esta forma no no tenemos que  tener un import para cada componente.
+   el archivo que nos permite hacer esto es  */
 import { AddCategory, GifGrid } from "./components"
 
 export const GifApp = () => {

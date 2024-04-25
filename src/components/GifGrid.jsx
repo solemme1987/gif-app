@@ -14,20 +14,21 @@ export const GifGrid = ({ category }) => {
         {
           isLoading && ( <h2>Cargando...</h2> )
         }
-
+        <div  className="card-grid">
         {
           images.map((image) =>( 
-            <section key={image.id}>
+            
               <GifItem 
+               key={image.id}
                 // a esta forma de pasar los props  le llamamos esparcir las propiedades.
                 // esto significa que todas las propiedades que trae image podran ser recibidas
                 // por pof GifItem  como props
                 { ...image }
               />
-            </section>
+            
           ))
         }
-    
+       </div>
     </>
    
   )
